@@ -1,0 +1,295 @@
+{
+  "Top Chef": [
+    {
+      "saison": "Saison 1 (2010)",
+      "gagnant": "Romain Tischenko",
+      "etablissement": "Le Galopin",
+      "adresse": "36 rue Saint-Marthe, 75010 Paris",
+      "type": "Restaurant",
+      "specialite": "Cuisine française",
+      "ville": "Paris"
+    },
+    {
+      "saison": "Saison 2 (2011)",
+      "gagnant": "Stéphanie Le Quellec",
+      "etablissement": "La Scène",
+      "adresse": "32 avenue Matignon, 75008 Paris",
+      "type": "Restaurant gastronomique",
+      "specialite": "Cuisine française étoilée",
+      "ville": "Paris",
+      "etoile": "Oui"
+    },
+    {
+      "saison": "Saison 3 (2012)",
+      "gagnant": "Jean Imbert",
+      "etablissement": "Jean Imbert au Plaza Athénée",
+      "adresse": "25 avenue Montaigne, 75008 Paris",
+      "type": "Restaurant gastronomique",
+      "specialite": "Cuisine traditionnelle et gastronomique",
+      "ville": "Paris"
+    },
+    {
+      "saison": "Saison 4 (2013)",
+      "gagnant": "Naoëlle D'Hainaut",
+      "etablissement": "Restaurant à Pontoise",
+      "adresse": "14 rue Marcel Rousier, 95000 Pontoise",
+      "type": "Restaurant",
+      "specialite": "Cuisine française",
+      "ville": "Pontoise"
+    },
+    {
+      "saison": "Saison 6 (2015)",
+      "gagnant": "Xavier Pincemin (Xavier Koenig)",
+      "etablissement": "L'Incontournable",
+      "adresse": "Colmar",
+      "type": "Restaurant",
+      "specialite": "Cuisine française",
+      "ville": "Colmar"
+    },
+    {
+      "saison": "Saison 10 (2019)",
+      "gagnant": "Samuel Albert",
+      "etablissement": "Les Petits Prés",
+      "adresse": "Place du Ralliement, Angers",
+      "type": "Restaurant",
+      "specialite": "Cuisine fusion (produits d'ici, idées d'ailleurs)",
+      "ville": "Angers"
+    },
+    {
+      "saison": "Saison 11 (2020)",
+      "gagnant": "David Gallienne",
+      "etablissement": "Le Jardin des Plumes",
+      "adresse": "1 rue du Milieu, 27620 Giverny",
+      "type": "Restaurant gastronomique",
+      "specialite": "Cuisine normande créative",
+      "ville": "Giverny",
+      "etoile": "1 étoile Michelin"
+    },
+    {
+      "saison": "Saison 12 (2021)",
+      "gagnant": "Mohamed Cheikh",
+      "etablissement": "Meïda",
+      "adresse": "Saint-Ouen",
+      "type": "Restaurant",
+      "specialite": "Cuisine méditerranéenne",
+      "ville": "Saint-Ouen"
+    },
+    {
+      "saison": "Saison 12 (2021)",
+      "gagnant": "Mohamed Cheikh",
+      "etablissement": "Chik'Chill",
+      "adresse": "Avenue de la France libre, 94000 Créteil",
+      "type": "Restaurant fast-casual",
+      "specialite": "Poulet frit français - street food",
+      "ville": "Créteil"
+    },
+    {
+      "saison": "Saison 16 (2025)",
+      "gagnant": "Quentin Mauro",
+      "etablissement": "Restaurant éphémère",
+      "adresse": "Paris (été 2025)",
+      "type": "Restaurant éphémère",
+      "specialite": "Cuisine gastronomique",
+      "ville": "Paris"
+    }
+  ],
+  "Autres candidats Top Chef notables": [
+    {
+      "candidat": "Mory Sacko (Saison 11)",
+      "etablissement": "MoSuke",
+      "adresse": "11 rue Raymond Lasserand, 75014 Paris",
+      "type": "Restaurant gastronomique",
+      "specialite": "Fusion franco-japono-africaine",
+      "ville": "Paris",
+      "etoile": "1 étoile Michelin"
+    },
+    {
+      "candidat": "Adrien Cachot (Saison 11, finaliste)",
+      "etablissement": "Vaisseau",
+      "adresse": "35 rue Faidherbe, 75011 Paris",
+      "type": "Restaurant gastronomique",
+      "specialite": "Cuisine espiègle et sophistiquée",
+      "ville": "Paris"
+    },
+    {
+      "candidat": "Sarah Mainguy (Saison 12, finaliste)",
+      "etablissement": "Vacarme",
+      "adresse": "5 rue des Bons Français, Nantes",
+      "type": "Restaurant bistronomique",
+      "specialite": "Cuisine nordique bistronomique",
+      "ville": "Nantes"
+    },
+    {
+      "candidat": "Thomas Chisholm (Saison 12)",
+      "etablissement": "Chocho",
+      "adresse": "54 Rue de Paradis, 75010 Paris",
+      "type": "Restaurant",
+      "specialite": "Influences catalanes et américaines",
+      "ville": "Paris"
+    },
+    {
+      "candidat": "Pierre Sang Boyer (Saison 2)",
+      "etablissement": "Pierre Sang on Gambey",
+      "adresse": "6 rue Gambey, 75011 Paris",
+      "type": "Restaurant",
+      "specialite": "Cuisine fusion",
+      "ville": "Paris"
+    },
+    {
+      "candidat": "Matthias Marc (Saison 12, demi-finaliste)",
+      "etablissement": "Substance",
+      "adresse": "18 rue de Chaillot, 75016 Paris",
+      "type": "Restaurant gastronomique",
+      "specialite": "Cuisine singulière et de saison",
+      "ville": "Paris",
+      "etoile": "1 étoile Michelin"
+    },
+    {
+      "candidat": "Guillaume Sanchez (Saison 8)",
+      "etablissement": "NESO",
+      "adresse": "3 Rue Papillon, 75009 Paris",
+      "type": "Restaurant",
+      "specialite": "Cuisine contemporaine et authentique",
+      "ville": "Paris",
+      "etoile": "1 étoile Michelin"
+    },
+    {
+      "candidat": "Bruno Aubin (Saison 12)",
+      "etablissement": "Cléo",
+      "adresse": "19 Boulevard de la Tour-Maubourg, 75007 Paris",
+      "type": "Restaurant gastronomique",
+      "specialite": "Cuisine raffinée et gourmande",
+      "ville": "Paris"
+    },
+    {
+      "candidat": "Norbert Tarayre (Saison 3)",
+      "etablissement": "Divers restaurants",
+      "adresse": "Paris et région parisienne",
+      "type": "Restaurant",
+      "specialite": "Cuisine populaire accessible",
+      "ville": "Paris"
+    }
+  ],
+  "La Meilleure Boulangerie de France": [
+    {
+      "saison": "Saison 11 (2024)",
+      "gagnant": "Lucien Gautier & Adam Sadet",
+      "etablissement": "Maison Gautier",
+      "adresse": "Anglet, Pays Basque",
+      "type": "Boulangerie-pâtisserie",
+      "specialite": "Boulangerie artisanale familiale",
+      "ville": "Anglet"
+    },
+    {
+      "saison": "Saison 12 (2025)",
+      "gagnant": "François Josse & Timothée Carougeat",
+      "etablissement": "Chez François et Emmanuelle",
+      "adresse": "Chambonas, Isère-Ardèche",
+      "type": "Boulangerie-pâtisserie",
+      "specialite": "Boulangerie artisanale",
+      "ville": "Chambonas"
+    },
+    {
+      "saison": "Saison 1 (2013)",
+      "gagnant": "Christophe Rouget",
+      "etablissement": "Boulangerie",
+      "adresse": "Beaumont-sur-Oise, Val-d'Oise",
+      "type": "Boulangerie",
+      "specialite": "Boulangerie traditionnelle",
+      "ville": "Beaumont-sur-Oise"
+    },
+    {
+      "saison": "Saison 2 (2014)",
+      "gagnant": "Patrice Monchaussé",
+      "etablissement": "Boulangerie",
+      "adresse": "Meaux, Seine-et-Marne",
+      "type": "Boulangerie",
+      "specialite": "Boulangerie traditionnelle",
+      "ville": "Meaux"
+    }
+  ],
+  "Le Meilleur Pâtissier": [
+    {
+      "saison": "Saison 1 (2012)",
+      "gagnant": "Thomas Boursier",
+      "statut": "Amateur - n'a pas ouvert d'établissement",
+      "note": "Reste dans son métier d'origine"
+    },
+    {
+      "saison": "Saison 2 (2013)",
+      "gagnant": "Mounir",
+      "statut": "Amateur - informations non disponibles"
+    },
+    {
+      "saison": "Saison 3 (2014)",
+      "gagnant": "Anne-Sophie",
+      "statut": "Amateur - informations non disponibles"
+    },
+    {
+      "saison": "Saison 4 (2015)",
+      "gagnant": "Cyril",
+      "statut": "Amateur - informations non disponibles"
+    },
+    {
+      "saison": "Saison 5 (2016)",
+      "gagnant": "Chelsea",
+      "statut": "Amateur - informations non disponibles"
+    },
+    {
+      "saison": "Saison 6 (2017)",
+      "gagnant": "Rachel",
+      "statut": "Amateur - informations non disponibles"
+    },
+    {
+      "saison": "Saison 7 (2018)",
+      "gagnant": "Ludovic",
+      "statut": "Amateur - informations non disponibles"
+    },
+    {
+      "saison": "Saison 8 (2019)",
+      "gagnant": "Camille",
+      "statut": "Amateur - informations non disponibles"
+    },
+    {
+      "saison": "Saison 9 (2020)",
+      "gagnant": "Élodie",
+      "statut": "Amateur - informations non disponibles"
+    },
+    {
+      "saison": "Saison 10 (2021)",
+      "gagnant": "Maud Leboeuf",
+      "etablissement": "Les gourmandises de Maud (en ligne)",
+      "adresse": "Blog et ateliers en ligne",
+      "type": "Cours et masterclass",
+      "specialite": "Pâtisserie créative",
+      "note": "Donne des masterclasses de pâtisserie"
+    },
+    {
+      "saison": "Saison 11 (2022)",
+      "gagnant": "Manon Broutée",
+      "etablissement": "Ateliers en ligne + boutique cookies",
+      "adresse": "En ligne",
+      "type": "Cours virtuels et vente en ligne",
+      "specialite": "Pâtisserie et cookies",
+      "note": "Ateliers virtuels avec Nils"
+    },
+    {
+      "saison": "Saison 12 (2023)",
+      "gagnant": "Julia",
+      "statut": "Reste juriste - passion pour la pâtisserie",
+      "note": "Continue sa carrière dans le droit"
+    }
+  ],
+  "Autres émissions": [
+    {
+      "emission": "La Meilleure Boulangerie de France - participant",
+      "candidat": "Jérémy Leygue",
+      "etablissement": "Pain Sucré",
+      "adresse": "Centre commercial de La Croix Verte, Saint-Germain-lès-Corbeil",
+      "type": "Boulangerie-pâtisserie",
+      "specialite": "Boulangerie-pâtisserie artisanale",
+      "ville": "Saint-Germain-lès-Corbeil",
+      "note": "2e place saison précédente, 1er prix Essonne 2025"
+    }
+  ]
+}

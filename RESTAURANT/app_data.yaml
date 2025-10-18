@@ -1,0 +1,263 @@
+- adresse: 36 rue Saint-Marthe, 75010 Paris
+  chef: Romain Tischenko
+  emission: Top Chef
+  etoile: ''
+  nom: Le Galopin
+  saison: Saison 1 (2010)
+  specialite: Cuisine française
+  statut: Gagnant
+  type: Restaurant
+  ville: Paris
+- adresse: 32 avenue Matignon, 75008 Paris
+  chef: Stéphanie Le Quellec
+  emission: Top Chef
+  etoile: Oui
+  nom: La Scène
+  saison: Saison 2 (2011)
+  specialite: Cuisine française étoilée
+  statut: Gagnant
+  type: Restaurant gastronomique
+  ville: Paris
+- adresse: 25 avenue Montaigne, 75008 Paris
+  chef: Jean Imbert
+  emission: Top Chef
+  etoile: ''
+  nom: Jean Imbert au Plaza Athénée
+  saison: Saison 3 (2012)
+  specialite: Cuisine traditionnelle et gastronomique
+  statut: Gagnant
+  type: Restaurant gastronomique
+  ville: Paris
+- adresse: 14 rue Marcel Rousier, 95000 Pontoise
+  chef: Naoëlle D'Hainaut
+  emission: Top Chef
+  etoile: ''
+  nom: Restaurant à Pontoise
+  saison: Saison 4 (2013)
+  specialite: Cuisine française
+  statut: Gagnant
+  type: Restaurant
+  ville: Pontoise
+- adresse: Colmar
+  chef: Xavier Pincemin (Xavier Koenig)
+  emission: Top Chef
+  etoile: ''
+  nom: L'Incontournable
+  saison: Saison 6 (2015)
+  specialite: Cuisine française
+  statut: Gagnant
+  type: Restaurant
+  ville: Colmar
+- adresse: Place du Ralliement, Angers
+  chef: Samuel Albert
+  emission: Top Chef
+  etoile: ''
+  nom: Les Petits Prés
+  saison: Saison 10 (2019)
+  specialite: Cuisine fusion (produits d'ici, idées d'ailleurs)
+  statut: Gagnant
+  type: Restaurant
+  ville: Angers
+- adresse: 1 rue du Milieu, 27620 Giverny
+  chef: David Gallienne
+  emission: Top Chef
+  etoile: 1 étoile Michelin
+  nom: Le Jardin des Plumes
+  saison: Saison 11 (2020)
+  specialite: Cuisine normande créative
+  statut: Gagnant
+  type: Restaurant gastronomique
+  ville: Giverny
+- adresse: Saint-Ouen
+  chef: Mohamed Cheikh
+  emission: Top Chef
+  etoile: ''
+  nom: Meïda
+  saison: Saison 12 (2021)
+  specialite: Cuisine méditerranéenne
+  statut: Gagnant
+  type: Restaurant
+  ville: Saint-Ouen
+- adresse: Avenue de la France libre, 94000 Créteil
+  chef: Mohamed Cheikh
+  emission: Top Chef
+  etoile: ''
+  nom: Chik'Chill
+  saison: Saison 12 (2021)
+  specialite: Poulet frit français - street food
+  statut: Gagnant
+  type: Restaurant fast-casual
+  ville: Créteil
+- adresse: Paris (été 2025)
+  chef: Quentin Mauro
+  emission: Top Chef
+  etoile: ''
+  nom: Restaurant éphémère
+  saison: Saison 16 (2025)
+  specialite: Cuisine gastronomique
+  statut: Gagnant
+  type: Restaurant éphémère
+  ville: Paris
+- adresse: 11 rue Raymond Lasserand, 75014 Paris
+  chef: Mory Sacko (Saison 11)
+  emission: Top Chef
+  etoile: 1 étoile Michelin
+  nom: MoSuke
+  saison: Candidat notable
+  specialite: Fusion franco-japono-africaine
+  statut: Candidat
+  type: Restaurant gastronomique
+  ville: Paris
+- adresse: 35 rue Faidherbe, 75011 Paris
+  chef: Adrien Cachot (Saison 11, finaliste)
+  emission: Top Chef
+  etoile: ''
+  nom: Vaisseau
+  saison: Candidat notable
+  specialite: Cuisine espiègle et sophistiquée
+  statut: Candidat
+  type: Restaurant gastronomique
+  ville: Paris
+- adresse: 5 rue des Bons Français, Nantes
+  chef: Sarah Mainguy (Saison 12, finaliste)
+  emission: Top Chef
+  etoile: ''
+  nom: Vacarme
+  saison: Candidat notable
+  specialite: Cuisine nordique bistronomique
+  statut: Candidat
+  type: Restaurant bistronomique
+  ville: Nantes
+- adresse: 54 Rue de Paradis, 75010 Paris
+  chef: Thomas Chisholm (Saison 12)
+  emission: Top Chef
+  etoile: ''
+  nom: Chocho
+  saison: Candidat notable
+  specialite: Influences catalanes et américaines
+  statut: Candidat
+  type: Restaurant
+  ville: Paris
+- adresse: 6 rue Gambey, 75011 Paris
+  chef: Pierre Sang Boyer (Saison 2)
+  emission: Top Chef
+  etoile: ''
+  nom: Pierre Sang on Gambey
+  saison: Candidat notable
+  specialite: Cuisine fusion
+  statut: Candidat
+  type: Restaurant
+  ville: Paris
+- adresse: 18 rue de Chaillot, 75016 Paris
+  chef: Matthias Marc (Saison 12, demi-finaliste)
+  emission: Top Chef
+  etoile: 1 étoile Michelin
+  nom: Substance
+  saison: Candidat notable
+  specialite: Cuisine singulière et de saison
+  statut: Candidat
+  type: Restaurant gastronomique
+  ville: Paris
+- adresse: 3 Rue Papillon, 75009 Paris
+  chef: Guillaume Sanchez (Saison 8)
+  emission: Top Chef
+  etoile: 1 étoile Michelin
+  nom: NESO
+  saison: Candidat notable
+  specialite: Cuisine contemporaine et authentique
+  statut: Candidat
+  type: Restaurant
+  ville: Paris
+- adresse: 19 Boulevard de la Tour-Maubourg, 75007 Paris
+  chef: Bruno Aubin (Saison 12)
+  emission: Top Chef
+  etoile: ''
+  nom: Cléo
+  saison: Candidat notable
+  specialite: Cuisine raffinée et gourmande
+  statut: Candidat
+  type: Restaurant gastronomique
+  ville: Paris
+- adresse: Paris et région parisienne
+  chef: Norbert Tarayre (Saison 3)
+  emission: Top Chef
+  etoile: ''
+  nom: Divers restaurants
+  saison: Candidat notable
+  specialite: Cuisine populaire accessible
+  statut: Candidat
+  type: Restaurant
+  ville: Paris
+- adresse: Anglet, Pays Basque
+  chef: Lucien Gautier & Adam Sadet
+  emission: La Meilleure Boulangerie de France
+  etoile: ''
+  nom: Maison Gautier
+  saison: Saison 11 (2024)
+  specialite: Boulangerie artisanale familiale
+  statut: Gagnant
+  type: Boulangerie-pâtisserie
+  ville: Anglet
+- adresse: Chambonas, Isère-Ardèche
+  chef: François Josse & Timothée Carougeat
+  emission: La Meilleure Boulangerie de France
+  etoile: ''
+  nom: Chez François et Emmanuelle
+  saison: Saison 12 (2025)
+  specialite: Boulangerie artisanale
+  statut: Gagnant
+  type: Boulangerie-pâtisserie
+  ville: Chambonas
+- adresse: Beaumont-sur-Oise, Val-d'Oise
+  chef: Christophe Rouget
+  emission: La Meilleure Boulangerie de France
+  etoile: ''
+  nom: Boulangerie
+  saison: Saison 1 (2013)
+  specialite: Boulangerie traditionnelle
+  statut: Gagnant
+  type: Boulangerie
+  ville: Beaumont-sur-Oise
+- adresse: Meaux, Seine-et-Marne
+  chef: Patrice Monchaussé
+  emission: La Meilleure Boulangerie de France
+  etoile: ''
+  nom: Boulangerie
+  saison: Saison 2 (2014)
+  specialite: Boulangerie traditionnelle
+  statut: Gagnant
+  type: Boulangerie
+  ville: Meaux
+- adresse: Blog et ateliers en ligne
+  chef: Maud Leboeuf
+  emission: Le Meilleur Pâtissier
+  etoile: ''
+  nom: Les gourmandises de Maud (en ligne)
+  note: Donne des masterclasses de pâtisserie
+  saison: Saison 10 (2021)
+  specialite: Pâtisserie créative
+  statut: Gagnant
+  type: Cours et masterclass
+  ville: En ligne
+- adresse: En ligne
+  chef: Manon Broutée
+  emission: Le Meilleur Pâtissier
+  etoile: ''
+  nom: Ateliers en ligne + boutique cookies
+  note: Ateliers virtuels avec Nils
+  saison: Saison 11 (2022)
+  specialite: Pâtisserie et cookies
+  statut: Gagnant
+  type: Cours virtuels et vente en ligne
+  ville: En ligne
+- adresse: Centre commercial de La Croix Verte, Saint-Germain-lès-Corbeil
+  chef: Jérémy Leygue
+  emission: La Meilleure Boulangerie de France - participant
+  etoile: ''
+  nom: Pain Sucré
+  note: 2e place saison précédente, 1er prix Essonne 2025
+  saison: Participant notable
+  specialite: Boulangerie-pâtisserie artisanale
+  statut: Participant
+  type: Boulangerie-pâtisserie
+  ville: Saint-Germain-lès-Corbeil

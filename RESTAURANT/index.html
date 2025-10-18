@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants &amp; Boulangeries des Émissions Culinaires</title>
+    <style>
+        /* Design System Base */
+        :root {
+            /* Primitive Color Tokens */
+            --color-white: rgba(255, 255, 255, 1);
+            --color-black: rgba(0, 0, 0, 1);
+            --color-cream-50: rgba(252, 252, 249, 1);
+            --color-cream-100: rgba(255, 255, 253, 1);
+            --color-gray-200: rgba(245, 245, 245, 1);
+            --color-gray-300: rgba(167, 169, 169, 1);
+            --color-gray-400: rgba(119, 124, 124, 1);
+            --color-slate-500: rgba(98, 108, 113, 1);
+            --color-brown-600: rgba(94, 82, 64, 1);
+            --color-charcoal-700: rgba(31, 33, 33, 1);
+            --color-charcoal-800: rgba(38, 40, 40, 1);
+            --color-slate-900: rgba(19, 52, 59, 1);
+            --color-teal-300: rgba(50, 184, 198, 1);
+            --color-teal-400: rgba(45, 166, 178, 1);
+            --color-teal-500: rgba(33, 128, 141, 1);
+            --color-teal-600: rgba(29, 116, 128, 1);
+            --color-teal-700: rgba(26, 104, 115, 1);
+            --color-teal-800: rgba(41, 150, 161, 1);
+            --color-red-400: rgba(255, 84, 89, 1);
+            --color-red-500: rgba(192, 21, 47, 1);
+            --color-orange-400: rgba(230, 129, 97, 1);
+            --color-orange-500: rgba(168, 75, 47, 1);
+
+            /* RGB versions for opacity control */
+            --color-brown-600-rgb: 94, 82, 64;
+            --color-teal-500-rgb: 33, 128, 141;
+            --color-slate-900-rgb: 19, 52, 59;
+            --color-slate-500-rgb: 98, 108, 113;
+            --color-red-500-rgb: 192, 21, 47;
+            --color-red-400-rgb: 255, 84, 89;
+            --color-orange-500-rgb: 168, 75, 47;
+            --color-orange-400-rgb: 230, 129, 97;
+
+            /* Custom Color Scheme */
+            --color-deep-red: #8B0000;
+            --color-gold: #DAA520;
+            --color-cream: #FFF8DC;
+            --color-elegant-black: #1a1a1a;
+
+            /* Background color tokens (Light Mode) */
+            --color-bg-1: rgba(59, 130, 246, 0.08);
+            --color-bg-2: rgba(245, 158, 11, 0.08);
+            --color-bg-3: rgba(34, 197, 94, 0.08);
+            --color-bg-4: rgba(239, 68, 68, 0.08);
+            --color-bg-5: rgba(147, 51, 234, 0.08);
+            --color-bg-6: rgba(249, 115, 22, 0.08);
+            --color-bg-7: rgba(236, 72, 153, 0.08);
+            --color-bg-8: rgba(6, 182, 212, 0.08);
+
+            /* Semantic Color Tokens (Light Mode) */
+            --color-background: var(--color-cream);
+            --color-surface: var(--color-white);
+            --color-text: var(--color-elegant-black);
+            --color-text-secondary: var(--color-slate-500);
+            --color-primary: var(--color-deep-red);
+            --color-primary-hover: #A50000;
+            --color-primary-active: #700000;
+            --color-secondary: rgba(218, 165, 32, 0.12);
+            --color-secondary-hover: rgba(218, 165, 32, 0.2);
+            --color-secondary-active: rgba(218, 165, 32, 0.25);
+            --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+            --color-btn-primary-text: var(--color-white);
+            --color-card-border: rgba(218, 165, 32, 0.2);
+            --color-card-border-inner: rgba(218, 165, 32, 0.15);
+            --color-error: var(--color-red-500);
+            --color-success: var(--color-teal-500);
+            --color-warning: var(--color-orange-500);
+            --color-info: var(--color-slate-500);
+            --color-focus-ring: rgba(139, 0, 0, 0.4);
+            --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+            /* Typography */
+            --font-family-base: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            --font-size-xs: 11px;
+            --font-size-sm: 12px;
+            --font-size-base: 14px;
+            --font-size-md: 14px;
+            --font-size-lg: 16px;
+            --font-size-xl: 18px;
+            --font-size-2xl: 20px;
+            --font-size-3xl: 24px;
+            --font-size-4xl: 30px;
+            --font-weight-normal: 400;
+            --font-weight-medium: 500;
+            --font-weight-semibold: 600;
+            --font-weight-bold: 700;
+            --line-height-tight: 1.2;
+            --line-height-normal: 1.5;
+            --letter-spacing-tight: -0.01em;
+
+            /* Spacing */
+            --space-0: 0;
+            --space-1: 1px;
+            --space-2: 2px;
+            --space-4: 4px;
+            --space-6: 6px;
+            --space-8: 8px;
+            --space-10: 10px;
+            --space-12: 12px;
+            --space-16: 16px;
+            --space-20: 20px;
+            --space-24: 24px;
+            --space-32: 32px;
+
+            /* Border Radius */
+            --radius-sm: 6px;
+            --radius-base: 8px;
+            --radius-md: 10px;
+            --radius-lg: 12px;
+            --radius-full: 9999px;
+
+            /* Shadows */
+            --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+            --shadow-card-hover: 0 8px 25px rgba(139, 0, 0, 0.15);
+
+            /* Animation */
+            --duration-fast: 150ms;
+            --duration-normal: 250ms;
+            --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Base styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family-base);
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: var(--line-height-normal);
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--color-deep-red) 0%, #A50000 100%);
+            color: var(--color-white);
+            padding: var(--space-32) var(--space-16);
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-md);
+        }
+
+        .header h1 {
+            font-size: var(--font-size-4xl);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: var(--space-8);
+            letter-spacing: var(--letter-spacing-tight);
+        }
+
+        .header p {
+            font-size: var(--font-size-lg);
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-16);
+        }
+
+        /* Filters section */
+        .filters {
+            background: var(--color-surface);
+            padding: var(--space-24);
+            margin: var(--space-32) 0;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--color-card-border);
+        }
+
+        .filters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-16);
+            margin-bottom: var(--space-16);
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .filter-label {
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--space-8);
+            color: var(--color-text);
+            font-size: var(--font-size-sm);
+        }
+
+        .filter-select, .search-input {
+            padding: var(--space-8) var(--space-12);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-base);
+            background: var(--color-surface);
+            font-size: var(--font-size-base);
+            transition: border-color var(--duration-fast) var(--ease-standard);
+        }
+
+        .filter-select:focus, .search-input:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px var(--color-focus-ring);
+        }
+
+        .search-container {
+            grid-column: 1 / -1;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: var(--space-12) var(--space-16);
+            font-size: var(--font-size-lg);
+        }
+
+        .filter-actions {
+            display: flex;
+            gap: var(--space-16);
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: var(--space-8);
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--color-primary);
+        }
+
+        .reset-btn {
+            background: var(--color-secondary);
+            color: var(--color-text);
+            border: none;
+            padding: var(--space-8) var(--space-16);
+            border-radius: var(--radius-base);
+            cursor: pointer;
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-medium);
+            transition: background-color var(--duration-fast) var(--ease-standard);
+        }
+
+        .reset-btn:hover {
+            background: var(--color-secondary-hover);
+        }
+
+        /* Results section */
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: var(--space-32) 0 var(--space-24) 0;
+        }
+
+        .results-count {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-primary);
+        }
+
+        /* Cards grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: var(--space-24);
+            margin-bottom: var(--space-32);
+        }
+
+        /* Card styles */
+        .card {
+            background: var(--color-surface);
+            border-radius: var(--radius-lg);
+            padding: var(--space-20);
+            border: 1px solid var(--color-card-border);
+            box-shadow: var(--shadow-sm);
+            transition: all var(--duration-normal) var(--ease-standard);
+            opacity: 0;
+            animation: fadeIn var(--duration-normal) var(--ease-standard) forwards;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-card-hover);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: var(--space-16);
+        }
+
+        .card-title {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-text);
+            margin-bottom: var(--space-4);
+            line-height: var(--line-height-tight);
+        }
+
+        .card-badges {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+            align-items: flex-end;
+        }
+
+        .badge {
+            padding: var(--space-4) var(--space-8);
+            border-radius: var(--radius-full);
+            font-size: var(--font-size-xs);
+            font-weight: var(--font-weight-semibold);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-show {
+            background: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .badge-show.top-chef {
+            background: var(--color-deep-red);
+        }
+
+        .badge-show.meilleur-patissier {
+            background: var(--color-gold);
+            color: var(--color-elegant-black);
+        }
+
+        .badge-show.meilleure-boulangerie {
+            background: #8B4513;
+            color: var(--color-white);
+        }
+
+        .badge-starred {
+            background: var(--color-gold);
+            color: var(--color-elegant-black);
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        .card-chef {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-primary);
+            margin-bottom: var(--space-8);
+        }
+
+        .card-info {
+            display: grid;
+            gap: var(--space-8);
+        }
+
+        .card-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-8);
+            font-size: var(--font-size-sm);
+        }
+
+        .card-info-label {
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-text-secondary);
+            min-width: 60px;
+            flex-shrink: 0;
+        }
+
+        .card-info-value {
+            color: var(--color-text);
+        }
+
+        .card-specialty {
+            background: var(--color-bg-2);
+            padding: var(--space-8) var(--space-12);
+            border-radius: var(--radius-base);
+            margin-top: var(--space-12);
+            font-style: italic;
+            color: var(--color-text);
+            text-align: center;
+        }
+
+        .card-note {
+            background: var(--color-bg-4);
+            padding: var(--space-8) var(--space-12);
+            border-radius: var(--radius-base);
+            margin-top: var(--space-8);
+            font-size: var(--font-size-xs);
+            color: var(--color-text-secondary);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: var(--space-32) var(--space-16);
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-sm);
+            border-top: 1px solid var(--color-border);
+            background: var(--color-surface);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: var(--font-size-3xl);
+            }
+
+            .filters-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .results-header {
+                flex-direction: column;
+                gap: var(--space-8);
+                text-align: center;
+            }
+        }
+
+        /* Hidden class for filtered items */
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Restaurants &amp; Boulangeries des Émissions Culinaires</h1>
+            <p>Découvrez les établissements ouverts par les gagnants et candidats de Top Chef, Le Meilleur Pâtissier, La Meilleure Boulangerie de France</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="filters">
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label class="filter-label" for="emission-filter">📺 Émission</label>
+                    <select id="emission-filter" class="filter-select">
+                        <option value="">Toutes les émissions</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label" for="ville-filter">🌍 Ville</label>
+                    <select id="ville-filter" class="filter-select">
+                        <option value="">Toutes les villes</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label" for="type-filter">🍽️ Type d'établissement</label>
+                    <select id="type-filter" class="filter-select">
+                        <option value="">Tous les types</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label" for="statut-filter">🏆 Statut</label>
+                    <select id="statut-filter" class="filter-select">
+                        <option value="">Tous les statuts</option>
+                    </select>
+                </div>
+
+                <div class="search-container">
+                    <label class="filter-label" for="search-input">🔍 Recherche</label>
+                    <input type="text" id="search-input" class="search-input" placeholder="Rechercher par nom de restaurant, chef ou ville...">
+                </div>
+            </div>
+
+            <div class="filter-actions">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="starred-filter">
+                    <label for="starred-filter" class="filter-label">⭐ Étoilés uniquement</label>
+                </div>
+                <button id="reset-filters" class="reset-btn">🔄 Réinitialiser</button>
+            </div>
+        </section>
+
+        <section class="results-header">
+            <div class="results-count" id="results-count">0 établissement(s) trouvé(s)</div>
+        </section>
+
+        <section class="cards-grid" id="cards-container">
+            <!-- Cards will be inserted here by JavaScript -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Base de données contenant <span id="total-count">0</span> établissements des émissions culinaires françaises</p>
+        </div>
+    </footer>
+
+    <script>
+        // Data from the application
+        const establishments = [
+            {
+                adresse: "36 rue Saint-Marthe, 75010 Paris",
+                chef: "Romain Tischenko",
+                emission: "Top Chef",
+                etoile: "",
+                nom: "Le Galopin",
+                saison: "Saison 1 (2010)",
+                specialite: "Cuisine française",
+                statut: "Gagnant",
+                type: "Restaurant",
+                ville: "Paris"
+            },
+            {
+                adresse: "32 avenue Matignon, 75008 Paris",
+                chef: "Stéphanie Le Quellec",
+                emission: "Top Chef",
+                etoile: "Oui",
+                nom: "La Scène",
+                saison: "Saison 2 (2011)",
+                specialite: "Cuisine française étoilée",
+                statut: "Gagnant",
+                type: "Restaurant gastronomique",
+                ville: "Paris"
+            },
+            {
+                adresse: "25 avenue Montaigne, 75008 Paris",
+                chef: "Jean Imbert",
+                emission: "Top Chef",
+                etoile: "",
+                nom: "Jean Imbert au Plaza Athénée",
+                saison: "Saison 3 (2012)",
+                specialite: "Cuisine traditionnelle et gastronomique",
+                statut: "Gagnant",
+                type: "Restaurant gastronomique",
+                ville: "Paris"
+            },
+            {
+                adresse: "14 rue Marcel Rousier, 95000 Pontoise",
+                chef: "Naoëlle D'Hainaut",
+                emission: "Top Chef",
+                etoile: "",
+                nom: "Restaurant à Pontoise",
+                saison: "Saison 4 (2013)",
+                specialite: "Cuisine française",
+                statut: "Gagnant",
+                type: "Restaurant",
+                ville: "Pontoise"
+            },
+            {
+                adresse: "Colmar",
+                chef: "Xavier Pincemin (Xavier Koenig)",
+                emission: "Top Chef",
+                etoile: "",
+                nom: "L'Incontournable",
+                saison: "Saison 6 (2015)",
+                specialite: "Cuisine française",
+                statut: "Gagnant",
+                type: "Restaurant",
+                ville: "Colmar"
+            },
+            {
+                adresse: "Place du Ralliement, Angers",
+                chef: "Samuel Albert",
+                emission: "Top Chef",
+                etoile: "",
+                nom: "Les Petits Prés",
+                saison: "Saison 10 (2019)",
+                specialite: "Cuisine fusion (produits d'ici, idées d'ailleurs)",
+                statut: "Gagnant",
+                type: "Restaurant",
+                ville: "Angers"
+            },
+            {
+                adresse: "1 rue du Milieu, 27620 Giverny",
+                chef: "David Gallienne",
+                emission: "Top Chef",
+                etoile: "1 étoile Michelin",
+                nom: "Le Jardin des Plumes",
+                saison: "Saison 11 (2020)",
+                specialite: "Cuisine normande créative",
+                statut: "Gagnant",
+                type: "Restaurant gastronomique",
+                ville: "Giverny"
+            },
+            {
+                adresse: "Saint-Ouen",
+                chef: "Mohamed Cheikh",
+                emission: "Top Chef",
+                etoile: "",
+                nom: "Meïda",
+                saison: "Saison 12 (2021)",
+                specialite: "Cuisine méditerranéenne",
+                statut: "Gagnant",
+                type: "Restaurant",
+                ville: "Saint-Ouen"
+            },
+            {
+                adresse: "Avenue de la France libre, 94000 Créteil",
+                chef: "Mohamed Cheikh",
+                emission: "Top Chef",
+                etoile: "",
+                nom: "Chik'Chill",
+                saison: "Saison 12 (2021)",
+                specialite: "Poulet frit français - street food",
+                statut: "Gagnant",
+                type: "Restaurant fast-casual",
+                ville: "Créteil"
+            },
+            {
+                adresse: "Paris (été 2025)",
+                chef: "Quentin Mauro",
+                emission: "Top Chef",
+                etoile: "",
+                nom: "Restaurant éphémère",
+                saison: "Saison 16 (2025)",
+                specialite: "Cuisine gastronomique",
+                statut: "Gagnant",
+                type: "Restaurant éphémère",
+                ville: "Paris"
+            },
+            {
+                adresse: "11 rue Raymond Lasserand, 75014 Paris",
+                chef: "Mory Sacko (Saison 11)",
+                emission: "Top Chef",
+                etoile: "1 étoile Michelin",
+                nom: "MoSuke",
+                saison: "Candidat notable",
+                specialite: "Fusion franco-japono-africaine",
+                statut: "Candidat",
+                type: "Restaurant gastronomique",
+                ville: "Paris"
+            },
+            {
+                adresse: "35 rue Faidherbe, 75011 Paris",
+                chef: "Adrien Cachot (Saison 11, finaliste)",
+                emission: "Top Chef",
+                etoile: "",
+                nom: "Vaisseau",
+                saison: "Candidat notable",
+                specialite: "Cuisine espiègle et sophistiquée",
+                statut: "Candidat",
+                type: "Restaurant gastronomique",
+                ville: "Paris"
+            },
+            {
+                adresse: "5 rue des Bons Français, Nantes",
+                chef: "Sarah Mainguy (Saison 12, finaliste)",
+                emission: "Top Chef",
+                etoile: "",
+                nom: "Vacarme",
+                saison: "Candidat notable",
+                specialite: "Cuisine nordique bistronomique",
+                statut: "Candidat",
+                type: "Restaurant bistronomique",
+                ville: "Nantes"
+            },
+            {
+                adresse: "54 Rue de Paradis, 75010 Paris",
+                chef: "Thomas Chisholm (Saison 12)",
+                emission: "Top Chef",
+                etoile: "",
+                nom: "Chocho",
+                saison: "Candidat notable",
+                specialite: "Influences catalanes et américaines",
+                statut: "Candidat",
+                type: "Restaurant",
+                ville: "Paris"
+            },
+            {
+                adresse: "6 rue Gambey, 75011 Paris",
+                chef: "Pierre Sang Boyer (Saison 2)",
+                emission: "Top Chef",
+                etoile: "",
+                nom: "Pierre Sang on Gambey",
+                saison: "Candidat notable",
+                specialite: "Cuisine fusion",
+                statut: "Candidat",
+                type: "Restaurant",
+                ville: "Paris"
+            },
+            {
+                adresse: "18 rue de Chaillot, 75016 Paris",
+                chef: "Matthias Marc (Saison 12, demi-finaliste)",
+                emission: "Top Chef",
+                etoile: "1 étoile Michelin",
+                nom: "Substance",
+                saison: "Candidat notable",
+                specialite: "Cuisine singulière et de saison",
+                statut: "Candidat",
+                type: "Restaurant gastronomique",
+                ville: "Paris"
+            },
+            {
+                adresse: "3 Rue Papillon, 75009 Paris",
+                chef: "Guillaume Sanchez (Saison 8)",
+                emission: "Top Chef",
+                etoile: "1 étoile Michelin",
+                nom: "NESO",
+                saison: "Candidat notable",
+                specialite: "Cuisine contemporaine et authentique",
+                statut: "Candidat",
+                type: "Restaurant",
+                ville: "Paris"
+            },
+            {
+                adresse: "19 Boulevard de la Tour-Maubourg, 75007 Paris",
+                chef: "Bruno Aubin (Saison 12)",
+                emission: "Top Chef",
+                etoile: "",
+                nom: "Cléo",
+                saison: "Candidat notable",
+                specialite: "Cuisine raffinée et gourmande",
+                statut: "Candidat",
+                type: "Restaurant gastronomique",
+                ville: "Paris"
+            },
+            {
+                adresse: "Paris et région parisienne",
+                chef: "Norbert Tarayre (Saison 3)",
+                emission: "Top Chef",
+                etoile: "",
+                nom: "Divers restaurants",
+                saison: "Candidat notable",
+                specialite: "Cuisine populaire accessible",
+                statut: "Candidat",
+                type: "Restaurant",
+                ville: "Paris"
+            },
+            {
+                adresse: "Anglet, Pays Basque",
+                chef: "Lucien Gautier & Adam Sadet",
+                emission: "La Meilleure Boulangerie de France",
+                etoile: "",
+                nom: "Maison Gautier",
+                saison: "Saison 11 (2024)",
+                specialite: "Boulangerie artisanale familiale",
+                statut: "Gagnant",
+                type: "Boulangerie-pâtisserie",
+                ville: "Anglet"
+            },
+            {
+                adresse: "Chambonas, Isère-Ardèche",
+                chef: "François Josse & Timothée Carougeat",
+                emission: "La Meilleure Boulangerie de France",
+                etoile: "",
+                nom: "Chez François et Emmanuelle",
+                saison: "Saison 12 (2025)",
+                specialite: "Boulangerie artisanale",
+                statut: "Gagnant",
+                type: "Boulangerie-pâtisserie",
+                ville: "Chambonas"
+            },
+            {
+                adresse: "Beaumont-sur-Oise, Val-d'Oise",
+                chef: "Christophe Rouget",
+                emission: "La Meilleure Boulangerie de France",
+                etoile: "",
+                nom: "Boulangerie",
+                saison: "Saison 1 (2013)",
+                specialite: "Boulangerie traditionnelle",
+                statut: "Gagnant",
+                type: "Boulangerie",
+                ville: "Beaumont-sur-Oise"
+            },
+            {
+                adresse: "Meaux, Seine-et-Marne",
+                chef: "Patrice Monchaussé",
+                emission: "La Meilleure Boulangerie de France",
+                etoile: "",
+                nom: "Boulangerie",
+                saison: "Saison 2 (2014)",
+                specialite: "Boulangerie traditionnelle",
+                statut: "Gagnant",
+                type: "Boulangerie",
+                ville: "Meaux"
+            },
+            {
+                adresse: "Blog et ateliers en ligne",
+                chef: "Maud Leboeuf",
+                emission: "Le Meilleur Pâtissier",
+                etoile: "",
+                nom: "Les gourmandises de Maud (en ligne)",
+                note: "Donne des masterclasses de pâtisserie",
+                saison: "Saison 10 (2021)",
+                specialite: "Pâtisserie créative",
+                statut: "Gagnant",
+                type: "Cours et masterclass",
+                ville: "En ligne"
+            },
+            {
+                adresse: "En ligne",
+                chef: "Manon Broutée",
+                emission: "Le Meilleur Pâtissier",
+                etoile: "",
+                nom: "Ateliers en ligne + boutique cookies",
+                note: "Ateliers virtuels avec Nils",
+                saison: "Saison 11 (2022)",
+                specialite: "Pâtisserie et cookies",
+                statut: "Gagnant",
+                type: "Cours virtuels et vente en ligne",
+                ville: "En ligne"
+            },
+            {
+                adresse: "Centre commercial de La Croix Verte, Saint-Germain-lès-Corbeil",
+                chef: "Jérémy Leygue",
+                emission: "La Meilleure Boulangerie de France - participant",
+                etoile: "",
+                nom: "Pain Sucré",
+                note: "2e place saison précédente, 1er prix Essonne 2025",
+                saison: "Participant notable",
+                specialite: "Boulangerie-pâtisserie artisanale",
+                statut: "Participant",
+                type: "Boulangerie-pâtisserie",
+                ville: "Saint-Germain-lès-Corbeil"
+            }
+        ];
+
+        // Global variables
+        let filteredEstablishments = [...establishments];
+        const emissionFilter = document.getElementById('emission-filter');
+        const villeFilter = document.getElementById('ville-filter');
+        const typeFilter = document.getElementById('type-filter');
+        const statutFilter = document.getElementById('statut-filter');
+        const starredFilter = document.getElementById('starred-filter');
+        const searchInput = document.getElementById('search-input');
+        const resetButton = document.getElementById('reset-filters');
+        const cardsContainer = document.getElementById('cards-container');
+        const resultsCount = document.getElementById('results-count');
+        const totalCount = document.getElementById('total-count');
+
+        // Initialize the application
+        function init() {
+            populateFilters();
+            renderCards();
+            updateCount();
+            addEventListeners();
+            
+            // Set total count
+            totalCount.textContent = establishments.length;
+        }
+
+        // Populate filter dropdowns
+        function populateFilters() {
+            // Get unique values
+            const emissions = [...new Set(establishments.map(e => e.emission))].sort();
+            const villes = [...new Set(establishments.map(e => e.ville))].sort();
+            const types = [...new Set(establishments.map(e => e.type))].sort();
+            const statuts = [...new Set(establishments.map(e => e.statut))].sort();
+
+            // Populate emission filter
+            emissions.forEach(emission => {
+                const option = document.createElement('option');
+                option.value = emission;
+                option.textContent = emission;
+                emissionFilter.appendChild(option);
+            });
+
+            // Populate ville filter
+            villes.forEach(ville => {
+                const option = document.createElement('option');
+                option.value = ville;
+                option.textContent = ville;
+                villeFilter.appendChild(option);
+            });
+
+            // Populate type filter
+            types.forEach(type => {
+                const option = document.createElement('option');
+                option.value = type;
+                option.textContent = type;
+                typeFilter.appendChild(option);
+            });
+
+            // Populate statut filter
+            statuts.forEach(statut => {
+                const option = document.createElement('option');
+                option.value = statut;
+                option.textContent = statut;
+                statutFilter.appendChild(option);
+            });
+        }
+
+        // Add event listeners
+        function addEventListeners() {
+            emissionFilter.addEventListener('change', applyFilters);
+            villeFilter.addEventListener('change', applyFilters);
+            typeFilter.addEventListener('change', applyFilters);
+            statutFilter.addEventListener('change', applyFilters);
+            starredFilter.addEventListener('change', applyFilters);
+            searchInput.addEventListener('input', applyFilters);
+            resetButton.addEventListener('click', resetFilters);
+        }
+
+        // Apply filters
+        function applyFilters() {
+            const emissionValue = emissionFilter.value;
+            const villeValue = villeFilter.value;
+            const typeValue = typeFilter.value;
+            const statutValue = statutFilter.value;
+            const starredOnly = starredFilter.checked;
+            const searchValue = searchInput.value.toLowerCase();
+
+            filteredEstablishments = establishments.filter(establishment => {
+                // Filter by emission
+                if (emissionValue && establishment.emission !== emissionValue) {
+                    return false;
+                }
+
+                // Filter by ville
+                if (villeValue && establishment.ville !== villeValue) {
+                    return false;
+                }
+
+                // Filter by type
+                if (typeValue && establishment.type !== typeValue) {
+                    return false;
+                }
+
+                // Filter by statut
+                if (statutValue && establishment.statut !== statutValue) {
+                    return false;
+                }
+
+                // Filter by starred
+                if (starredOnly && !establishment.etoile) {
+                    return false;
+                }
+
+                // Filter by search
+                if (searchValue) {
+                    const searchableText = `${establishment.nom} ${establishment.chef} ${establishment.ville}`.toLowerCase();
+                    if (!searchableText.includes(searchValue)) {
+                        return false;
+                    }
+                }
+
+                return true;
+            });
+
+            renderCards();
+            updateCount();
+        }
+
+        // Reset filters
+        function resetFilters() {
+            emissionFilter.value = '';
+            villeFilter.value = '';
+            typeFilter.value = '';
+            statutFilter.value = '';
+            starredFilter.checked = false;
+            searchInput.value = '';
+            
+            filteredEstablishments = [...establishments];
+            renderCards();
+            updateCount();
+        }
+
+        // Render cards
+        function renderCards() {
+            cardsContainer.innerHTML = '';
+            
+            filteredEstablishments.forEach((establishment, index) => {
+                const card = createCard(establishment, index);
+                cardsContainer.appendChild(card);
+            });
+        }
+
+        // Create a card element
+        function createCard(establishment, index) {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.style.animationDelay = `${index * 50}ms`;
+
+            // Determine show badge class
+            let showBadgeClass = 'badge-show';
+            if (establishment.emission === 'Top Chef') {
+                showBadgeClass += ' top-chef';
+            } else if (establishment.emission === 'Le Meilleur Pâtissier') {
+                showBadgeClass += ' meilleur-patissier';
+            } else if (establishment.emission.includes('Boulangerie')) {
+                showBadgeClass += ' meilleure-boulangerie';
+            }
+
+            // Check if starred
+            const isStarred = establishment.etoile && establishment.etoile.trim() !== '';
+            
+            card.innerHTML = `
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">${establishment.nom}</div>
+                        <div class="card-chef">${establishment.chef}</div>
+                    </div>
+                    <div class="card-badges">
+                        <div class="badge ${showBadgeClass}">${establishment.emission}</div>
+                        ${isStarred ? '<div class="badge badge-starred">⭐ Étoilé</div>' : ''}
+                    </div>
+                </div>
+                
+                <div class="card-info">
+                    <div class="card-info-item">
+                        <span class="card-info-label">Saison:</span>
+                        <span class="card-info-value">${establishment.saison}</span>
+                    </div>
+                    <div class="card-info-item">
+                        <span class="card-info-label">Statut:</span>
+                        <span class="card-info-value">${establishment.statut}</span>
+                    </div>
+                    <div class="card-info-item">
+                        <span class="card-info-label">Type:</span>
+                        <span class="card-info-value">${establishment.type}</span>
+                    </div>
+                    <div class="card-info-item">
+                        <span class="card-info-label">Adresse:</span>
+                        <span class="card-info-value">${establishment.adresse}</span>
+                    </div>
+                    <div class="card-info-item">
+                        <span class="card-info-label">Ville:</span>
+                        <span class="card-info-value">${establishment.ville}</span>
+                    </div>
+                    ${isStarred ? `
+                        <div class="card-info-item">
+                            <span class="card-info-label">Étoile:</span>
+                            <span class="card-info-value">${establishment.etoile}</span>
+                        </div>
+                    ` : ''}
+                </div>
+                
+                <div class="card-specialty">${establishment.specialite}</div>
+                
+                ${establishment.note ? `<div class="card-note">📝 ${establishment.note}</div>` : ''}
+            `;
+
+            return card;
+        }
+
+        // Update count
+        function updateCount() {
+            const count = filteredEstablishments.length;
+            const text = count === 0 ? 'Aucun établissement trouvé' : 
+                        count === 1 ? '1 établissement trouvé' : 
+                        `${count} établissements trouvés`;
+            resultsCount.textContent = text;
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
